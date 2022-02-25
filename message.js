@@ -269,6 +269,9 @@ DNSRecord.prototype.parse = function(body, section_name, record_num, sections) {
     case 'EDNS':
       self.data = rdata
       break
+    case 'IN CAA':
+      self.data = rdata
+      break
     default:
       throw new Error('Unknown record '+self.kind()+': ' + JSON.stringify(self))
   }
