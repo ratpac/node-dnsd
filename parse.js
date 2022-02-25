@@ -28,6 +28,7 @@ module.exports = { 'id': id
                  , 'srv': srv
                  , 'soa': soa
                  , 'txt': txt
+                 , 'caa': caa
                  }
 
 
@@ -245,6 +246,15 @@ function txt(msg, data) {
   }
 
   return parts
+}
+
+function caa(msg, data) {
+  var parts = []
+  while(data.length) {
+    var len = data.readUInt8(0)
+    parts.push(data.slice(1, 1+len).toString('ascii'))
+    data = data.slice(1+len)
+  }
 }
 
 function uncompress(msg, offset) {

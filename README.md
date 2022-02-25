@@ -1,3 +1,6 @@
+# Changes
+0.9.8 support CAA Dns Requests for use with letsencrypt DNS Challenge
+
 # node-dnsd: DNS encoder, decoder, and server
 
 *node-dnsd* is a Node.js package for working with DNS. It converts binary DNS messages to and from convenient JavaScript objects; and it provides a server API, for running a custom name server.

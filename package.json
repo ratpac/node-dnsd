@@ -2,8 +2,8 @@
 , "description": "Authoritative name server written in node.js"
 
 , "keywords": [ "dns", "bind", "dnsd"]
-, "version": "0.9.7"
-, "author": "John Callahan <callahanjohn7@gmail.com>"
+, "version": "0.9.8"
+, "author": "Michael Schönwiese"
 , "repository": { "type":"git", "url":"https://github.com/johndc7/node-dnsd" }
 , "licenses": [{ "type": "Apache 2.0", "url": "https://github.com/jhs/dnsd/blob/master/LICENSE" }]
 
